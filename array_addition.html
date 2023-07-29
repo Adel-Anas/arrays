@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findDistinctSum(set1, set2) {
+            
+            let sum = 0;
+
+            const combinedSet = set1.concat(set2);
+
+            console.log(combinedSet)
+
+            
+            const distinctElements = [];
+
+    
+            for (let i = 0; i < combinedSet.length; i++) {
+
+                if (!distinctElements.includes(combinedSet[i])) {
+                
+                distinctElements.push(combinedSet[i]);
+                sum += combinedSet[i];
+                }
+                else{
+                    sum -= combinedSet[i];
+                }
+            }      
+
+            return sum;
+        }
+
+
+        const set1 = [3, 1, 7, 9];
+        const set2 = [2, 4, 1, 9, 3];
+        
+        const result = findDistinctSum(set1, set2);
+        console.log("Sum of distinct elements:", result);
+
+
+    </script>
+    
+</body>
+</html>

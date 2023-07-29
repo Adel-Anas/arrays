@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function multiplyArrays(array1, array2) {
+        
+        if (array1.length !== array2.length) {
+            console.log("Arrays must have the same length.");
+        }
+
+        
+        const resultArray = [];
+
+        
+        for (let i = 0; i < array1.length; i++) {
+            const multipliedValue = array1[i] * array2[i];
+            resultArray.push(multipliedValue);
+        }
+
+        return resultArray;
+        }
+
+        
+        const array1 = [7, 5, 1];
+        const array2 = [3, 2, 1];
+        const result = multiplyArrays(array1, array2);
+        console.log("New set after multiplication:", result);
+
+    </script>
+</body>
+</html>
