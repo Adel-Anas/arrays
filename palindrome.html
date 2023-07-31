@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function palindrome(word) {
+            const palindrome_word = word.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+
+                if (palindrome_word != palindrome_word.split('').reverse().join('') ){
+                    return result_2;
+                }
+                else {
+                    return result_1;
+                }
+                
+            }
+
+        const result_1  = `This word is a palindrome`;
+        const result_2 = `This word is not a palindrome`;
+
+
+        const word1 = "racecar";
+        const word2 = "hello";
+        const word3 = "Kayak";
+
+console.log(palindrome(word1));
+console.log(palindrome(word2));
+console.log(palindrome(word3));
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function rec_palindrome(str){
+            let left = 0;
+            let right = str.lenght - 1;
+
+            for(let i = 0; i < str.lenght; i++){
+                if (right - left < 2 || str[i] === str[str.length - i]) {
+                return result_1;
+            }
+            else {
+                str[i] != str[str.length -1];
+                return result_2;
+            }
+            }
+            
+        }
+        const result_1 = "This word is a palindrome";
+
+        const result_2 = "This word is not a paldinrome";
+
+        console.log(rec_palindrome("slice"));
+
+    </script>
+</body>
+</html>
